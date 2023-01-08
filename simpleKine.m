@@ -4,9 +4,8 @@ syms x1 x2 %x1 is theta and x2 is d
 syms xdot1 xdot2 %%xdot1 is theta_derivative and xdot2 is d_derivative
 
 
-act=zeros(length(linspace(0,1,101)),2);
-diffact=zeros(length(linspace(0,1,101)),2);
-count=0;
+act=zeros(length(linspace(0,1,101)),2); %array that holds solution of theta and d
+diffact=zeros(length(linspace(0,1,101)),2); %array that holds derivative of the solution of theta and d
 t=linspace(0,1,101);
 for ko=1:1:101
     
